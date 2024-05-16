@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="style/styleFB.css" rel="stylesheet" type="text/css"/>
+    <!-----footer CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+    <div id="divmaincontainer">
+
+        <header>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <h1>Feedback</h1>
+        
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <ul> 
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="movies.html">Movies</a></li>
+                    <li class="hideOnMobile"><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li class="hideOnMobile"><a href="collections.html">Collections</a></li>
+                    <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                    <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+
+                    <div class="seach-box">
+                        <input type="search" id="txtsearch" class="textbox" placeholder="search"/>
+                    </div>
+
+                </ul>
+            </nav>
+
+        </header>
+        <script>
+            function showsidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hidesidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+        
+        <form>
+            <div class="feedback-container">
+                <h1>Your Feedback Is Important To Us</h1>
+                <p>How would you rate us?</p>
+                <div class="radio-btns">
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="excellent"/>
+                        <label for="Yes">Excellent</label>
+                    </div>
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="great"/>
+                        <label for="No">Great</label>
+                    </div>
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="good"/>
+                        <label for="Yes">Good</label>
+                    </div>
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="okay"/>
+                        <label for="No">Okay</label>
+                    </div>
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="bed"/>
+                        <label for="Yes">Bed</label>
+                    </div>
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="verybed"/>
+                        <label for="No">Very Bed</label>
+                    </div>
+                </div>
+                <p class="question">What do you want to say?</p>
+                <textarea id="textarea" cols="20" rows="5" required="True" oninvalid="setCustomValidity('Please give your feedback!')" oninput="setCustomValidity('')"></textarea>
+                <p class="question">Should this be published?</p>
+                <div class="radio-btns">
+                    <div class="one-btns">
+                        <input type="radio" name="one" id="yes"/>
+                        <label for="Yes">Yes</label>
+                    </div>
+                    <div class="one-btn">
+                        <input type="radio" name="one" id="No"/>
+                        <label for="No">No</label>
+                    </div>
+                </div>
+                <div class="info-field">
+                    <div class="name">
+                        <label for="firstname">Name:</label>
+                        <input type="text" id="name" name="name" required="True" oninvalid="setCustomValidity('Please enter your Firstname!')" oninput="setCustomValidity('')"/></br>
+                    </div>
+                    <div class="email">
+                        <label>Email</label>
+                        <input type="email" required="True" oninvalid="setCustomValidity('Please enter your Email!')" oninput="setCustomValidity('')"/></br>
+                    </div>
+                </div> 
+                <div class="accept">
+                    <input type="radio" id="accept"/>
+                    <label>I accept the <a href="#">Terms and Conditions</a></label>
+                </div>
+                <div class="center">
+                    <input type="submit" value="Send" id="send" name="send" class="button"/>
+                </div>
+        </form>
+
+    </div>
+    
+        <footer>
+        <div class="footerContainer">
+            <div class="socialIcons">
+                <p class="follow">Follow Us:</p>
+                <a href="https://web.facebook.com/warnerbrosent"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/warnerbros"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.pinterest.com/wbpictures/"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+        </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>

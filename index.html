@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warner bros</title> 
+    <!---CSS---->
+    <link href="style\style.css" rel="stylesheet" type="text/css"/>
+   <!-----bootstrap link-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-----------main container------------>
+    <div id="divmaincontainer">
+
+        <!-----------header---------->
+        <header>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <h1>Warner Bros</h1>
+            
+            <!-------------navigation bar------->
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <!-------------Hide Navigation------->
+                <ul> 
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="movies.html">Movies</a></li>
+                    <li class="hideOnMobile"><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li class="hideOnMobile"><a href="collections.html">Collections</a></li>
+                    <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                    <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+
+                    <div class="seach-box">
+                        <input type="search" id="txtsearch" class="textbox" placeholder="search"/>
+                    </div>
+                </ul>
+            </nav>
+            <!-------------End of navigation bar------->
+
+        </header>
+        <!-----------End of header---------->
+
+        <script>
+            function showsidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hidesidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+    
+        <div id="divcolcontainer" class="master">
+
+            <section id="slideshow" class="slideshow">
+                <article class="slideshow_space">
+                    <div id="divslide">
+                        <img id="slide" src="images/slides/7.jpeg"alt="Gallery Image" title="Movies & TV shows" onerror="this.onerror=null; this.src=images/error.jpg;">
+                    </div>
+                    <script>
+                        //create image array
+                        var arrimages=new Array();
+                        //add images to array
+                        for(var k=0;k<12;k++){
+                            arrimages[k]="images/slides/"+ k +".jpeg";
+                        }
+                        //variable for current image index
+                        var currentimageindex=0;
+                        //slideshow function
+                        function Slideshow(){
+                            //get image tag and load image
+                            document.getElementById("slide").src=arrimages[currentimageindex];
+                            //tinary operater
+                            currentimageindex=(currentimageindex<=arrimages.length-1)?currentimageindex+1:0;
+                        }
+                        //call slideshow everytime u want(every 5/10 secs)
+                        setInterval("Slideshow()",3000);
+                    </script>
+                </article>
+            </section>
+
+             <!-------movies--------->
+             <div class="second">
+
+                <div class="latest">
+            
+                    <h1>Movies</h1>
+            
+                    <div class="box">
+            
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">AQUAMAN AND THE LOST KINGDOM</p>
+                                    <p class="category">Action/Advanter</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/UGc5Tzz19UY"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/Aquaman.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Wonder Woman 1984</p>
+                                    <p class="category">Action/Adventure</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/1Q8fG0TtVAY"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/wonder woman.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">We Bare Bears:The Movie</p>
+                                    <p class="category">Animation,Comedy,Family</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/0ZNsLy2IwcY"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/we bare bears.jpg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Godzilla vs. Kong</p>
+                                    <p class="category">Action/Adventure</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/qqrpMRDuPfc"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/godzilla.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Harry Potter 8-Film Collection</p>
+                                    <p class="category">Action/Adventure, Family, Sci-Fi/Fantasy</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/u9JWSqLXyY0"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/harry potter.jpg" alt="image">
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----TV Shows--->
+
+            <div class="newrealeses">
+                
+                <div class="movies_box">
+
+                    <h1>TV Shows</h1>
+
+                    <div class="box">
+
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Manifest</p>
+                                    <p class="category">Drama</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/0wkMl-igRio"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/Manifest.jpg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Rick and Morty</p>
+                                    <p class="category">Action/Advanture,Animation,comedy</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/PkZtVBNkmso"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/rick and morty.png" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Young Sheldon</p>
+                                    <p class="category">Comedy</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/lgE0JaBrL8c"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/young sheldon.jpg" alt="image">
+            
+                        </div>
+
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Legacies</p>
+                                    <p class="category">Drama</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/zJ3puCVPr9A"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/legacies.jpg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Sweet Tooth</p>
+                                    <p class="category">Action/Adventure,Drama</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/93K28b7ed3A"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/sweet tooth.jpeg" alt="image">
+            
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+            <!-----------EndofDivcolcontainer--------->
+
+            </div>
+            <footer>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <p class="follow">Follow Us:</p>
+                        <a href="https://web.facebook.com/warnerbrosent"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/warnerbros"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.pinterest.com/wbpictures/"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+                </div>
+        
+            </footer>
+
+    </div>
+    <!-----------End of main container--------->
+
+</body>
+</html>

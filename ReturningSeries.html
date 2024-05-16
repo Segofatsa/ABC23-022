@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returning Series</title>
+    <link rel="stylesheet" href="style/moviesCSS.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-----footer CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="divmaincontainer">
+
+        <header>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <h1>Returning Series</h1>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <ul> 
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="movies.html">Movies</a></li>
+                    <li class="hideOnMobile"><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li class="hideOnMobile"><a href="collections.html">Collections</a></li> 
+                    <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                    <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+
+                    <div class="seach-box">
+                        <input type="search" id="txtsearch" class="textbox" placeholder="search"/>
+                    </div>
+
+                </ul>
+            </nav>
+            <script>
+                function showsidebar(){
+                    const sidebar=document.querySelector('.sidebar')
+                    sidebar.style.display='flex'
+                }
+                function hidesidebar(){
+                    const sidebar=document.querySelector('.sidebar')
+                    sidebar.style.display='none'
+                }
+            </script>
+
+        </header> 
+                <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="image">
+                            <div class="black">
+                                <h1>You</h1>
+                                <p>
+                                    In season 4, after his previous life went up in flames, Joe Goldberg has fled to Europe to escape his "messy" past, adopt a new identity, and, of course, to pursue true love. 
+                                    But Joe soon finds himself in the strange new role of reluctant detective as he discovers he may not be the only killer in London. 
+                                    Now, his future depends on identifying and stopping whoever's targeting his new friend group of uber-wealthy socialites. 
+                                    Season 4 of YOU premieres on Netflix in two parts, on February 9 and March 9.
+                                </p>
+                                    <div class="genre">
+                                     <a href="#" class="category">Drama</a>
+                                    </div>
+                                    <div class="watch">
+                                        <a href="https://www.youtube.com/embed/ga1m0wjzscU"><i class="fa-solid fa-play"></i></a>
+                                        <p>Watch trailor</p>
+                                    </div>
+                            </div>
+                            <img src="images/you.jpg" alt="image">
+                        </div>
+                    </div>
+      <div class="swiper-slide">
+
+        <div class="image">
+            <div class="black">
+                <h1>Abbott Elementary</h1>
+                <p>
+                    In season 4, after his previous life went up in flames, Joe Goldberg has fled to Europe to escape his "messy" past, adopt a new identity, and, of course, to pursue true love. 
+                    But Joe soon finds himself in the strange new role of reluctant detective as he discovers he may not be the only killer in London. Now, his future depends on identifying and stopping whoever's targeting his new friend group of uber-wealthy socialites. 
+                    Season 4 of YOU premieres on Netflix in two parts, on February 9 and March 9.
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Comedy</a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch trailor</p>
+                </div>
+            </div>
+            <img src="images/abbottelementary.jpg" alt="image">
+        </div>
+
+      </div>
+
+      <div class="swiper-slide">
+
+        <div class="image">
+            <div class="black">
+                <h1>Sweet Tooth</h1>
+                <p>
+                    As a deadly new wave of the Sick bears down, Gus and a band of fellow hybrids are held prisoner by General Abbot (Neil Sandilands – Desert Rose, Dam) and the Last Men. 
+                    To protect his friends, Gus agrees to help Dr. Singh, beginning a dark journey into his origins and his mother’s role in the events leading up to The Great Crumble. 
+                    Outside the Preserve, Tommy Jepperd (Nonso Anozie – Zoo, Ted Lasso) and Aimee Eden (Dania Ramirez – Devious Maids, Once Upon a Time ) team up to break the hybrids free, a partnership that will be tested as Jepperd’s secrets come to light.
+                    As the revelations of the past threaten the possibility of redemption in the present, Gus and his found family find themselves on a collision course with Abbot and the evil forces that look to wipe them out once and for all. 
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Action</a>
+                    <a href="#" class="category">Advanture</a>
+                    <a href="#" class="category">Drama</a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch trailor</p>
+                </div>
+            </div>
+            <img src="images/Sweet-Tooth.webp" alt="image">
+        </div>
+
+      </div>
+
+      <div class="swiper-slide">
+
+        <div class="image">
+            <div class="black">
+                <h1>Craig of the Creek</h1>
+                <p>
+                    Co-created by three-time Emmy-nominated Steven Universe writers Matt Burnett and Ben Levin, 
+                    Cartoon Network's Craig of the Creek follows the precocious Craig as he transforms everyday afternoons with his best friends J.P. and Kelsey into thrilling and comical adventures. 
+                    Since its debut, the groundbreaking show has been celebrated for the trio's creative and imaginative escapades and spurred a groundswell of excitement from critics, fans across social media, and beyond. 
+                    Craig of the Creek taps into an emotional sense of nostalgia that resonates with audiences.
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Animation</a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch trailor</p>
+                </div>
+            </div>
+            <img src="images/craig-of-the-creek.webp" alt="image">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<div class="second">
+
+    <div class="latest">
+
+        <h1>Returning Series</h1>
+
+        <div class="box">
+
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">Young Sheldon</p>
+                        <p class="category">Comedy</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/lgE0JaBrL8c"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/young sheldon.jpg" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">The Real Housewives of Salt Lake City</p>
+                        <p class="category">Reality</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/Dr6aSTPzTt0"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/therealhousewives.webp" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">Looney Tunes Cartoons</p>
+                        <p class="category">Animation,Comedy</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/nalw1XRAiMI"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/looney tunes cartonns.jpeg" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">Shrinking</p>
+                        <p class="category">Comedy</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/YjHfjQDWl1A"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/shrinking.jpg" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">The Bachelorette: Season 20</p>
+                        <p class="category">Reality,Romance</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/ZKsloNZ0jRA"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/the bachelor.jpeg" alt="image">
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+            <div class="newrealeses">
+                
+                <div class="movies_box">
+
+                    <div class="box">
+
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Tad Lasso</p>
+                                    <p class="category">Comedy</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+            
+                            <img src="images/tad lasso.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">The Adventures with Superman</p>
+                                    <p class="category">Action/Adventure, Animation</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+            
+                            <img src="images/the adventures with superman.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Batwheels</p>
+                                    <p class="category">Animation</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+            
+                            <img src="images/batwheels.jpeg" alt="image">
+            
+                        </div>
+
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Superman & Lois</p>
+                                    <p class="category">Action/Adventure, Drama</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+            
+                            <img src="images/SPM_1080x1350.avif" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Sweet Tooth</p>
+                                    <p class="category">Action/Adventure, Drama</p>
+                                </div>
+                                <div class="right">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+            
+                            <img src="images/sweet tooth.jpeg" alt="image">
+            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div class="favorites">
+
+            <div class="favorite_movie">
+
+                <div class="box">
+
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Velma</p>
+                                <p class="category">Animation</p>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+        
+                        <img src="images/velma.jpeg" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">The Jennifer Hudson Show</p>
+                                <p class="category">Talk/Variety</p>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+        
+                        <img src="images/the-jennifer-hudson-show.download" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Bob Hearts Abishola</p>
+                                <p class="category">Comedy</p>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+        
+                        <img src="images/bob-hearts-abishola-hollywood-series-scaled.jpg" alt="image">
+        
+                    </div>
+
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">The Bacholar in Paradise</p>
+                                <p class="category">Reality</p>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+        
+                        <img src="images/in paradise.jpg" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">All American: Homecoming</p>
+                                <p class="category">Drama</p>
+                            </div>
+                            <div class="right">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+        
+                        <img src="images/homecoming.jpeg" alt="image">
+        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <p class="follow">Follow Us:</p>
+                    <a href="https://web.facebook.com/warnerbrosent"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/warnerbros"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/wbpictures/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+            </div>
+    
+        </footer>
+
+
+    </div>
+</body>
+</html>

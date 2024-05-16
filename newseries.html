@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New series</title>
+    <link rel="stylesheet" href="style/css.css"/>
+    <link rel="stylesheet" href="./font-awesome/css/font-awereness.min.css"/>
+    <link rel="stylesheet" href="js/swiper-bundle.minNS.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="js/materialize.min.js"/>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png"></a>
+        </div>
+        <h1>New Series</h1>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#">TV shows &#x25BE;</a>
+                    <ul>
+                        <li><a href="newseries.html">New Series</a></li>
+                        <li><a href="ReturningSeries.html">Returning Series</a></li>
+                    </ul>
+                </li>
+                <li><a href="Games & Apps.html">Games & Apps</a></li>
+                <li><a href="collections.html">Collections</a> </li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <ul> 
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="movies.html">Movies</a></li>
+                <li class="hideOnMobile"><a href="#">TV shows &#x25BE;</a>
+                    <ul>
+                        <li><a href="newseries.html">New Series</a></li>
+                        <li><a href="ReturningSeries.html">Returning Series</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="Games & Apps.html">Games & Apps</a></li>
+                <li class="hideOnMobile"><a href="collections.html">Collections</a></li> 
+                <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+
+                <div class="seach-box">
+                    <input type="search" id="txtsearch" class="textbox" placeholder="search"/>
+                </div>
+
+            </ul>
+        </nav>
+        <script>
+            function showsidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='flex'
+            }
+            function hidesidebar(){
+                const sidebar=document.querySelector('.sidebar')
+                sidebar.style.display='none'
+            }
+        </script>
+
+    </header> 
+
+    <div id="divmaincontainer">
+
+        <div class="newseries">
+            <section>
+                <div class="heropage">
+                    <div class="inside-heropage">
+                        <span>NEW SERIES</span>
+                        <div class="line1"></div>
+                        <h1>DEAD BOY DETECTIVES</h1>
+                        <p>
+                            From Emmy® nominee Steve Yockey (The Flight Attendant, Supernatural), Doom Patrol's Jeremy Carver and Berlanti Productions, 
+                            the DC drama DEAD BOY DETECTIVES is a horror detective series born from DC's The Sandman and Dead Boy Detectives comics. 
+                            It's a fresh take on a ghost story that explores loss, grief, and death through the lens of Edwin Payne and Charles Rowland, 
+                            two dead British teenagers, and their very alive friend, Crystal Palace. So, it's a lot like a vintage detective series - only darker and on acid.
+                        </p>
+                        <p class="genro">Action/Adventure,Comedy</p>
+                        <div class="btn1">
+                            <a href="https://www.youtube.com/embed/hwJmZ2Ekfbc"><i class="fa-solid fa-circle-play"></i>Watch Trailor</a>
+                        </div>
+                     </div>
+                 </div>
+                <div class="poster">
+                    <img src="images/body.jpeg" alt=""/>
+                </div>
+            </section>
+        </div>
+    
+        <div class="second">
+    
+            <div class="latest">
+        
+                <div class="box">
+        
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Dead Boy Detectives</p>
+                                <p class="category">Action/Adventure, Comedy</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/hwJmZ2Ekfbc"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/deadboydetective.jpeg" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">The Girls on the Bus</p>
+                                <p class="category">Drama</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/498bk5p1tX0"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/the girls.jpg" alt="image">
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <p class="follow">Follow Us:</p>
+                    <a href="https://web.facebook.com/warnerbrosent"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/warnerbros"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/wbpictures/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+            </div>
+    
+        </footer>
+    
+
+    </div>
+
+</body>
+</html>

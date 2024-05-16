@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="style/moviesCSS.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-----footer CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="divmaincontainer">
+
+        <header>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png"></a>
+            </div>
+            <h1>Movies</h1>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li><a href="collections.html">Collections</a> </li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+                <ul> 
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li class="hideOnMobile"><a href="movies.html">Movies</a></li>
+                    <li class="hideOnMobile"><a href="#">TV shows &#x25BE;</a>
+                        <ul>
+                            <li><a href="newseries.html">New Series</a></li>
+                            <li><a href="ReturningSeries.html">Returning Series</a></li>
+                        </ul>
+                    </li>
+                    <li class="hideOnMobile"><a href="Games & Apps.html">Games & Apps</a></li>
+                    <li class="hideOnMobile"><a href="collections.html">Collections</a></li> 
+                    <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                    <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+
+                    <div class="seach-box">
+                        <input type="search" id="txtsearch" class="textbox" placeholder="search"/>
+                    </div>
+
+                </ul>
+            </nav>
+            <script>
+                function showsidebar(){
+                    const sidebar=document.querySelector('.sidebar')
+                    sidebar.style.display='flex'
+                }
+                function hidesidebar(){
+                    const sidebar=document.querySelector('.sidebar')
+                    sidebar.style.display='none'
+                }
+            </script>
+
+        </header> 
+                <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="image">
+                            <div class="black">
+                                <h1>Just Mercy</h1>
+                                <p>
+                                A powerful and thought-provoking true story, “Just Mercy” follows young lawyer Bryan Stevenson (Jordan) and his history-making battle for justice.
+                                After graduating from Harvard, Bryan had his pick of lucrative jobs.
+                                Instead, he heads to Alabama to defend those wrongly condemned or who were not afforded proper representation, with the support of local advocate Eva Ansley (Larson).
+                                One of his first, and most incendiary, cases is that of Walter McMillian (Foxx), who, in 1987, was sentenced to die for the notorious murder of an 18-year-old girl, 
+                                despite a preponderance of evidence proving his innocence and the fact that the only testimony against him came from a criminal with a motive to lie.
+                                In the years that follow, Bryan becomes embroiled in a labyrinth of legal and political maneuverings and overt and unabashed racism as he fights for Walter, and others like him, with the odds—and the system—stacked against them.
+                                    </p>
+                                    <div class="genre">
+                                     <a href="#" class="category">Drama</a>
+                                    </div>
+                                    <div class="watch">
+                                        <a href="https://www.youtube.com/embed/DVnu4Ydh6mY"><i class="fa-solid fa-play"></i></a>
+                                        <p>Watch trailor</p>
+                                    </div>
+                            </div>
+                            <img src="images/slides/5.jpeg" alt="image">
+                        </div>
+                    </div>
+      <div class="swiper-slide">
+
+        <div class="image">
+            <div class="black">
+                <h1>Inception</h1>
+                <p>
+                    Your mind is the scene of the crime.
+                    Box-office superstar Leonardo DiCaprio stars in this contemporary science fiction action film set "within the architecture of the mind." 
+                    Written, directed and produced by Oscar® and Golden Globe nominee Christopher Nolan (The Dark Knight, Batman Begins, The Prestige), 
+                    this eagerly awaited follow-up to 2008's billion-dollar blockbuster is yet another visionary tale from a startingly original filmmaker who continually raises the bar with every film he makes. 
+                    Shooting in London, Paris, Tangiers, Calgary and Los Angeles, Nolan's mind-bending film also stars Academy Award® winners Michael Caine and Marion Cotillard, 
+                    in addition to Juno's Ellen Page, Batman Begins' Cillian Murphy and Oscar® nominees Ken Watanabe (The Last Samurai) and Tom Berenger (Platoon).
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Action</a>
+                    <a href="#" class="category">Adventure</a>
+                    <a href="#" class="category">Sci-Fi</a>
+                    <a href="#" class="category">Fantasy</a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch trailor</p>
+                </div>
+            </div>
+            <img src="images/slides/9.jpeg" alt="image">
+        </div>
+
+      </div>
+
+      <div class="swiper-slide">
+
+        <div class="image">
+            <div class="black">
+                <h1>A cinderella story: Starbuck</h1>
+                <p>
+                    Finley Tremaine, a small town farm girl, longs to spread her wings and soar as an aspiring performer. 
+                    When a Hollywood film crew arrives in her sleepy town, she is determined to land a role in the production and captures the attention of handsome lead actor, Jackson Stone. 
+                    Unfortunately, a botched audition forces her to change course. 
+                    Now, disguised as cowboy “Huck,” Finley finally gets her big break. 
+                    But can she keep the charade a secret from everyone, including her evil stepmother and devious step-siblings?
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Family</a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch trailor</p>
+                </div>
+            </div>
+            <img src="images/slides/7.jpeg" alt="image">
+        </div>
+
+      </div>
+
+      <div class="swiper-slide">
+
+        <div class="image">
+            <div class="black">
+                <h1>Scoob</h1>
+                <p>
+                    In Scooby-Doo's greatest adventure yet, 
+                    see the never-before-told story of how lifelong friends Scooby and Shaggy first met and how they joined forces with young detectives Fred, Velma and Daphne to form the famous Mystery Inc. 
+                    Now, with hundreds of cases solved, Scooby and the gang face their biggest, toughest mystery ever: an evil plot to unleash the ghost dog Cerberus upon the world. 
+                    As they race to stop this global “dogpocalypse,” the gang discovers that Scooby has a secret legacy and an epic destiny greater than anyone ever imagined
+                </p>
+                <div class="genre">
+                    <a href="#" class="category">Action</a>
+                    <a href="#" class="category">Adventure</a>
+                    <a href="#" class="category">Animation</a>
+                </div>
+                <div class="watch">
+                    <i class="fa-solid fa-play"></i>
+                    <p>Watch trailor</p>
+                </div>
+            </div>
+            <img src="images/slides/6.jpeg" alt="image">
+        </div>
+
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<div class="second">
+
+    <div class="latest">
+
+        <h1>Popular Movies</h1>
+
+        <div class="box">
+
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">Black Adam</p>
+                        <p class="category">Action/Adventure, Sci-Fi/Fantasy</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/X0tOpBuYasI"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/Black-Adam.webp" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">House Party</p>
+                        <p class="category">Comedy</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/SaemahQzNTE"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/house party.jpeg" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">Magic Mike's Last Dancee</p>
+                        <p class="category">Comedy,Drama</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/pBIGdw-BRxw"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/magics mics last dance.jpeg" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">The Batman</p>
+                        <p class="category">Action/Adventure, Crime, Drama</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/mqqft2x_Aa4"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/Batman.jpeg" alt="image">
+
+            </div>
+            <div class="card">
+                <div class="details">
+                    <div class="left">
+                        <p class="name">Don't Worry Darlings</p>
+                        <p class="category">Mystery, Suspense/Thriller</p>
+                    </div>
+                    <div class="right">
+                        <a href="https://www.youtube.com/embed/FgmnKsED-jU"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+
+                <img src="images/dont worry.jpeg" alt="image">
+
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="newrealeses">
+                
+                <div class="movies_box">
+
+                    <h1>New Releases</h1>
+
+                    <div class="box">
+
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Wonder Woman 1984</p>
+                                    <p class="category">Action/Advanture</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/1Q8fG0TtVAY"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/wonder woman.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Godzilla vs. Kong</p>
+                                    <p class="category">Action/Advanture</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/qqrpMRDuPfc"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/godzilla.jpeg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Tom & Jerry</p>
+                                    <p class="category">Action/Adventure, Animation, Family</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/kP9TfCWaQT4"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/Tom and jerry.jpeg" alt="image">
+            
+                        </div>
+
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">We Bare Bears:The Movie</p>
+                                    <p class="category">Animation, Comedy, Family</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/0ZNsLy2IwcY"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/we bare bears.jpg" alt="image">
+            
+                        </div>
+                        <div class="card">
+                            <div class="details">
+                                <div class="left">
+                                    <p class="name">Shazam! Fury of the Gods</p>
+                                    <p class="category">Action/Adventure</p>
+                                </div>
+                                <div class="right">
+                                    <a href="https://www.youtube.com/embed/Zi88i4CpHe4"><i class="fa-solid fa-play"></i></a>
+                                </div>
+                            </div>
+            
+                            <img src="images/shazam.jpeg" alt="image">
+            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <div class="favorites">
+
+            <div class="favorite_movie">
+                <h1>Movie Night Favorites</h1>
+
+                <div class="box">
+
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Gravity</p>
+                                <p class="category">Sci-Fi/Fantasy, Suspense/Thriller</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/ufsrgE0BYf0"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/gravity.jpeg" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Fantastic Beasts and Where to Find Them</p>
+                                <p class="category">Sci-Fi/Fantasy</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/VYZ3U1inHA4"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/Fantastic beasts.jpeg" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">A star is Born</p>
+                                <p class="category">Drama, Music/Musicals, Romance</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/nSbzyEJ8X9E"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/a star.jpeg" alt="image">
+        
+                    </div>
+
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Space jam:A new Legacy</p>
+                                <p class="category">Action/Adventure, Animation, Comedy, Family</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/olXYZOsXw_o"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/space jam.jpeg" alt="image">
+        
+                    </div>
+                    <div class="card">
+                        <div class="details">
+                            <div class="left">
+                                <p class="name">Harry Potter 8-Film Collection</p>
+                                <p class="category">Action/Adventure, Family, Sci-Fi/Fantasy</p>
+                            </div>
+                            <div class="right">
+                                <a href="https://www.youtube.com/embed/u9JWSqLXyY0"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+        
+                        <img src="images/harry potter.jpg" alt="image">
+        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <p class="follow">Follow Us:</p>
+                    <a href="https://web.facebook.com/warnerbrosent"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/warnerbros"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.pinterest.com/wbpictures/"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+            </div>
+    
+        </footer>
+
+
+    </div>
+
+</body>
+</html>

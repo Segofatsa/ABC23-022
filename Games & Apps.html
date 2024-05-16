@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games & Apps</title>                 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style/moviesCSS.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-----footer CSS-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+
+  <div id="divmaincontainer">
+
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png"></a>
+        </div>
+        <h1>Games & Apps</h1>
+    
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="#">TV shows &#x25BE;</a>
+                    <ul>
+                        <li><a href="newseries.html">New Series</a></li>
+                        <li><a href="ReturningSeries.html">Returning Series</a></li>
+                    </ul>
+                </li>
+                <li><a href="Games & Apps.html">Games & Apps</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <ul> 
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="movies.html">Movies</a></li>
+                <li class="hideOnMobile"><a href="#">TV shows &#x25BE;</a>
+                    <ul>
+                        <li><a href="newseries.html">New Series</a></li>
+                        <li><a href="ReturningSeries.html">Returning Series</a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="Games & Apps.html">Games & Apps</a></li>
+                <li class="hideOnMobile"><a href="collections.html">Collections</a></li>
+                <li class="hideOnMobile"><a href="feedback.html">Feedback</a></li>
+                <li class="menu-button" onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 0 24 24" width="26px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></a></li>
+
+                <div class="seach-box">
+                    <input type="search" id="txtsearch" class="textbox" placeholder="search"/>
+                </div>
+
+            </ul>
+        </nav>
+
+    </header>
+    <script>
+        function showsidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='flex'
+        }
+        function hidesidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
+  
+   <section id="main">
+    <h2 class="heading">VIDEO GAMES</h2>
+
+    <ul id="autowidth" class="cs-hidden">
+      <li class="item-a">
+        <div class="showcase-box">
+          <a href="https://www.youtube.com/embed/RAyNSeTgWgM"><img src="images/TheLegoMovie2-VideoGame_bg.jpg"/></a>
+        </div>
+        <div class="latest-b-text">
+          <strong>The Lego Movie 2 Video Game</strong>
+        </div>
+      </li>
+      <li class="item-b">
+        <div class="showcase-box">
+          <a href="#"><img src="images/dyinglight_following.jpg"/></a>
+        </div>
+        <div class="latest-b-text">
+          <strong>Dying Light: The Following</strong>
+        </div>
+      </li>
+      <li class="item-c">
+        <div class="showcase-box">
+          <a href="https://www.youtube.com/embed/uyEJBDJIwFA"><img src="images/legoWorld.jpeg"/></a>
+        </div>
+        <div class="latest-b-text">
+          <strong>LEGO Worlds</strong>
+        </div>
+      </li>
+      <li class="item-d">
+        <div class="showcase-box">
+          <a href="#"><img src="images/batmanGame.jpeg"/></a>
+        </div>
+        <div class="latest-b-text">
+          <strong>Batman: The Telltale Series</strong>
+        </div>
+      </li>
+      <li class="item-e">
+        <div class="showcase-box">
+          <a href="#"><img src="images/scribblenauts.jpeg"/></a>
+        </div>
+        <div class="latest-b-text">
+          <strong>Scribblenauts Showdown</strong>
+        </div>
+      </li>
+      <li class="item-e">
+        <div class="showcase-box">
+          <a href="#"><img src="images/Star_Wars_VideoGame.jpg"/></a>
+        </div>
+        <div class="latest-b-text">
+          <strong>LEGO Star Wars: The Force Awakens</strong>
+        </div>
+      </li>
+    </li>
+    </ul>
+   </section>
+
+   <section id="latest">
+    <h2 class="heading">MOBILE GAMES & APPS</h2>
+    <ul id="autoWidth2" class="cs-hidden">
+
+      <li class="item-a">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="https://www.youtube.com/embed/VIjYg1PdBMI"><img src="images/mystery cases.jpeg"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>Scooby-Doo Mystery Cases</strong>
+          </div>
+        </div>
+      </li>
+      <li class="item-b">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="#"><img src="images/harryGame.jpeg"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>Harry Potter Hogwarts Mystery</strong>
+          </div>
+        </div>
+      </li>
+      <li class="item-c">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="https://www.youtube.com/embed/jxMyQ0lqU9A"><img src="images/teenTitas.jpeg"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>Teeny Titans-Teen Titans Co!</strong>
+          </div>
+        </div>
+      </li>
+      <li class="item-d">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="#"><img src="images/WB.jpeg"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>WB Studio Tour</strong>
+          </div>
+        </div>
+      </li>
+      <li class="item-e">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="#"><img src="images/psych.png"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>Psych! Outwit Your Friends</strong>
+          </div>
+        </div>
+      </li>
+      <li class="item-f">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="#"><img src="images/harryGame.jpeg"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>Harry Potter Hogwarts Mystery</strong>
+          </div>
+        </div>
+      </li>
+      <li class="item-g">
+        <div class="latest-box">
+          <div class="latest-b-img">
+            <a href="#"><img src="images/as.jpeg"></a>
+          </div>
+          <div class="latest-b-text">
+            <strong>Adult Swim</strong>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+   </section>
+
+   <script>
+    $(document).ready(function() {
+      $('#autowidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderload: function(){
+          $('#autowidth,#autoWidth2').removeClass('cS-hidden')
+        }
+      })
+    })
+   </script>
+
+    <div class="swiper-pagination"></div>
+
+    <!-- Swiper JS -->
+   <script src="js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      grid: {
+        rows: 2,
+      },
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+<footer>
+  <div class="footerContainer">
+    <div class="socialIcons">
+      <p class="follow">Follow Us:</p>
+      <a href="https://web.facebook.com/warnerbrosent"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/warnerbrosentertainment/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://twitter.com/warnerbros"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/warner-bros--entertainment/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@WarnerBrosPictures"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.pinterest.com/wbpictures/"><i class="fa-brands fa-pinterest"></i></a>
+  </div>
+  </div>
+  <div class="footerBottom">
+      <p>Copyright © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+  </div>
+
+</footer>
+
+</div>
+</body>
+</html>
