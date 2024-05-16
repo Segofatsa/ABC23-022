@@ -5,8 +5,124 @@
     height: 60px;
     width: 60px;
 }
+.logo img{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 60px;
+  width: 60px;
+}
 header{
-    background-color: dodgerblue;
+  background-color: dodgerblue;
+}
+h1{
+  text-align: center;
+}
+nav{
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  z-index: 5;
+}
+ul{
+  padding:20px 100px;
+  margin: 0 0 0 100px;
+  list-style: none;
+  justify-content:flex-end;
+  align-items: center;
+  display: inline-flex;
+  z-index: 5;
+}
+li{
+  float: left;
+  margin-right: 20px;
+  z-index: 5;
+}
+nav a{
+  width: 100px;
+  display: inline;
+  padding: 20px 15px;
+  font-family: Arial;
+  font-weight: bold;
+  color: beige;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  text-decoration: none;
+  z-index: 5;
+}
+#txtsearch{
+  color: blue;
+  display:inline-block;
+  border: 1px solid purple;
+  margin-right: -20px;
+}
+nav a:hover{
+  background-color: brown;
+  transition: 0.0s;
+  text-transform: uppercase;
+  z-index: 5;
+}
+nav ul li ul{
+  position: absolute;
+  right: auto;
+  width: 100px;
+  background-color: black;
+  display: none;
+  z-index: 5;
+}
+nav ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,1);
+  z-index: 5;
+}
+nav ul li ul li ul{
+  left: 200px;
+  top: 0;
+  display: none;
+  z-index: 5;
+}
+nav ul li:focus-within>ul,
+nav ul li:hover>ul{
+  display: block;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width:800px){
+  .hideOnMobile{
+      display:none;
+  }
+  .menu-button{
+      display:block;
+  }
+}
+@media(max-width:400px){
+  .sidebar{
+      width:100%;
+  }
 }
 h1{
     text-align: center;
@@ -50,6 +166,7 @@ nav a{
     display:inline-block;
     border: 1px solid purple;
     margin-right: -20px;
+    z-index: 5;
 }
 nav a:hover{
     background-color: brown;
@@ -76,9 +193,11 @@ nav ul li ul li ul{
     display: none;
     z-index: 5;
 }
+
 nav ul li:focus-within>ul,
 nav ul li:hover>ul{
     display: block;
+    z-index: 5;
 }
 .sidebar{
     position: fixed;
@@ -117,39 +236,114 @@ nav ul li:hover>ul{
         width:100%;
     }
 }
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-image:url(../images/banner.png.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    backdrop-filter: blur(4px);
-    position: relative;
+
+.swiper {
+    width: 95%;
+    height: 85%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .swiper::selection{
+    user-select: none;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide .image .black{
+    width: 100%;
     height: 100%;
+    position: absolute;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.0),rgba(0,0,0,0.9));
+  }
+
+  .swiper-slide .image .black h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    position: relative;
+    top: 40%;
+    left: 5%;
+    color: #fff;
+  }
+
+  .swiper-slide .image .black p{
+    width:550px;
+    text-align: justify;
+    font-size: 16px;
+    color: #cccccc;
+    margin: 10px 0;
+    position: relative;
+    top:40%;
+    left: 5%;
+    line-height: 23px;
 }
 
-#divslide{
-    width:75%;
-    border:5px groove black;
-    margin:auto;
-    border-radius:4rem;
-    place-items: center;
-}
-img#slide{
-    width:100%;
-    padding:none;
-    margin:none;
-    border-radius:4rem;
-}
-.slideshow{
-    height: 80%;
-    width: 90%;
+.swiper-slide .image .black .genre{
+    text-align: left;
+    font-size: 16px;
+    margin: 13px 0;
+    position: relative;
+    top:40%;
+    left:5%;
 }
 
-.second{
+.swiper-slide .image .black .genre a.category{
+    background: #282931;
+    text-decoration: none;
+    color:#cccccc;
+    padding: 2px 5px;
+}
+
+.swiper-slide .image .black .watch{
+    width: 700px;
+    text-align: left;
+    display: flex;
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+    top: 40%;
+    left: 5%;
+}
+
+.swiper-slide .image .black .watch i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffe100;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.swiper-slide .image .black .watch p{
+    position: relative;
+    left: 15px;
+    font-family: sans-serif;
+}
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*-----whats hot-----*/
+  .second{
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -207,7 +401,6 @@ img#slide{
     opacity: 0;
   }  
 
-    /*-----hover action------*/
   .second .latest .box .card:hover .details .left{
     opacity: 1;
     transform: translateX(0);
@@ -266,8 +459,8 @@ img#slide{
     width: 150px;
   }
 
-/*--------=TV Shows=-----*/
 
+  /*---------new releases-----*/
 .newrealeses{
     width: 100%;
     height: auto;
@@ -380,7 +573,120 @@ img#slide{
 }
 
 
+/*-------favorites-----*/
+.favorites{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background-color: #171717;
+}
 
+.favorites .favorite_movie{
+    width:95%;
+    margin:0 auto;
+}
+
+.favorites .favorite_movie h1{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.favorites .favorite_movie .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .favorites .favorite_movie .box .card{
+    width: 250px;
+    height: 370px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .favorites .favorite_movie .box .card .details{
+    width: 250px;
+    height: 370px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 8px;
+    transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  .favorites .favorite_movie .box .card:hover .details{
+    opacity: 1;
+    background: linear-gradient(to bottom,rgba(0,0,0,0.0),rgba(0,0,0,0.7));
+  }
+
+  .favorites .favorite_movie .box .card .details .left{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transform: translateX(-100px);
+    transition: 0.4s;
+    opacity: 0;
+  }  
+
+  .favorites .favorite_movie .box .card:hover .details .left{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .favorites .favorite_movie .box .card .details .left p.name{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .favorites .favorite_movie .box .card .details .left p.category{
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .favorites .favorite_movie .box .card .details .right{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    transform: translateX(100px);
+    transition: 0.4s;
+    opacity: 0;
+  }
+
+  .favorites .favorite_movie .box .card:hover .details .right{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .favorites .favorite_movie .box .card .details .right i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffe100;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #282931;
+    margin: 0 10px 8px 0;
+}
+
+.favorites .favorite_movie .box .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*-----footer---*/
 footer{
     box-sizing: border-box;
     background-color: black;
