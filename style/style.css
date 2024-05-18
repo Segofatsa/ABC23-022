@@ -156,6 +156,10 @@ img#slide{
     padding-bottom: 25px;
     background: #171717;
   }
+a{
+  text-decoration: none;
+  color: white;
+}
 
   .second .latest{
     width:95%;
@@ -260,10 +264,6 @@ img#slide{
     height: 100%;
     object-fit: cover;
     object-position: center;
-}
-a{
-  text-decoration: none;
-  color: white;
 }
   img{
     width: 150px;
