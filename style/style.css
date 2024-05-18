@@ -261,7 +261,10 @@ img#slide{
     object-fit: cover;
     object-position: center;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
   img{
     width: 150px;
   }
